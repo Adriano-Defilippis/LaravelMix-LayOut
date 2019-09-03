@@ -1,0 +1,11 @@
+nav{
+    @extend %center_content_ondiv;
+
+    @include width_div($width_aside_nav_el);
+
+    background: lightgreen;
+
+    
+
+    margin: $margin;
+}

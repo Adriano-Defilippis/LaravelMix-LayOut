@@ -1,0 +1,63 @@
+
+$colorbutton_prymary: #66cc33;
+$font_lighter: lighter;
+$font_bold : bold;
+$font_size_large: 26px;
+$font_size_medium: 22px;
+$font_size_small: 18px;
+
+$padding_contaienrs: 20px;
+$margin: 10px;
+
+$mywidth : 100%;
+$width_aside_nav_el: 20%;
+$width_page_body: 60%;
+
+$height_foot_head: 20%;
+
+
+%center_P1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%center_content_ondiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin width_div ($size : $mywidth) {
+  width: $size;
+}
+
+@mixin my_wrapper_foot_head {
+    margin: $margin;
+    height: $height_foot_head;
+}
+
+
+* {
+    margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  
+    font-family: 'Lato', sans-serif;
+  
+    user-select: none;
+    list-style: none;
+  }
+  
+  .container {
+
+    width: 98%;
+    height: 100vh;
+    
+    margin: 0 auto;  
+  }
+
+  @import "header";
+  @import "footer";
+  @import "page";
+  

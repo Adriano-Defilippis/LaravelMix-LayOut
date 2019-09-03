@@ -1,0 +1,23 @@
+
+div.wrapper_header{
+    @include my_wrapper_foot_head;
+}
+
+header{
+    @extend %center_content_ondiv;
+    @include width_div;
+
+    font-size: $font_size_large;
+
+    background-color: orange;
+    
+    height: 100%;
+    
+    padding: $padding_contaienrs;
+    /* margin: $margin; */
+
+    p{
+    
+        font-weight: $font_bold;
+    }
+}

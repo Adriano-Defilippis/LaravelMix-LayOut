@@ -1,0 +1,15 @@
+div.wrapper_footer{
+    @include my_wrapper_foot_head;
+}
+
+footer{
+    @extend %center_content_ondiv;
+    @include width_div;
+
+    font-size: $font_size_small;
+
+    background: purple;
+
+    height: 100%;
+    
+}

@@ -1,0 +1,26 @@
+
+
+.wrapper{
+    @import "nav";
+    @import "aside";
+    @include width_div;
+
+    font-size: $font_size_medium;
+
+    display: flex;
+    
+    
+    height: $width_page_body;
+
+    main{
+        @extend %center_content_ondiv;
+        @include width_div($width_page_body);
+        
+        background-color: lightgray;
+    
+        padding: $padding_contaienrs;
+        margin: $margin;
+    }
+    
+}
+
